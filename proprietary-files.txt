@@ -256,7 +256,7 @@ vendor/lib64/camera/components/com.qti.node.aon.so
 vendor/lib64/camera/components/com.qti.node.customhwnode.so
 vendor/lib64/camera/components/com.qti.node.depthprovider.so
 vendor/lib64/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qti.node.dewarp.so
+vendor/lib64/camera/components/com.qti.node.dewarp.so;DISABLE_DEPS
 vendor/lib64/camera/components/com.qti.node.dummydepth.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
 vendor/lib64/camera/components/com.qti.node.dummysat.so
@@ -445,7 +445,7 @@ vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
-vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/hw/com.qti.chi.override.so;DISABLE_DEPS
 vendor/lib64/libSnpeHtpPrepare.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
@@ -471,7 +471,7 @@ vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamximageformatutils.so;DISABLE_DEPS
 vendor/lib64/libcamxncsdatafactory.so
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
@@ -479,7 +479,7 @@ vendor/lib64/libcamxstatscore.so
 vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libchifeature2.so
+vendor/lib64/libchifeature2.so;DISABLE_DEPS
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcommonchiutils.so
@@ -487,7 +487,6 @@ vendor/lib64/libdepthcomputation.so
 vendor/lib64/libexcal_core.so
 vendor/lib64/libexcal_system.so
 vendor/lib64/libhdr10plus.so
-vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdr_stub.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libipebpsstriping170.so
@@ -505,11 +504,9 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libnanopb.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
 vendor/lib64/libopestriping.so
-vendor/lib64/libos.so
 vendor/lib64/libqll.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
@@ -562,12 +559,18 @@ vendor/lib64/libsomc_wasabeef.so
 vendor/lib64/libsomc_yummyrsc.so
 vendor/lib64/libsomc_yummy.so
 vendor/lib64/libsomc_zunda.so
+vendor/lib64/libsys-utils.so
 vendor/lib64/libsony_animaleye.so
 vendor/lib64/libsony_asr.so
+vendor/lib64/libopencv_highgui.so
+vendor/lib64/libopencv_features2d.so
+vendor/lib64/libopencv_calib3d.so
+vendor/lib64/libopencv_imgcodecs.so
+vendor/lib64/libopencv_core.so
+vendor/lib64/libopencv_imgproc.so
 vendor/lib64/libsony_cakconv_reidpre.so
 vendor/lib64/libsony_cakconv.so
 vendor/lib64/libsony_cc.so
-vendor/lib64/libsonydseehxwrapper.so
 vendor/lib64/libsony_ec.so
 vendor/lib64/libsony_facestab.so
 vendor/lib64/libsony_fc.so
@@ -579,6 +582,8 @@ vendor/lib64/local_libcamera_metadata.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.somc.camera.device-impl.so
+vendor/lib64/hw/camera.qcom.sm8650.so
+vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 
 # Camera FW
 vendor/firmware/CAMERA_ICP_170.elf
@@ -608,10 +613,66 @@ vendor/firmware/CAMERA_ICP.mbn
 vendor/firmware/CAMERA_ICP.mdt
 
 # Display (SDM)
-vendor/etc/displayconfig/display_id_131.xml
+vendor/etc/display/advanced_sf_offsets.xml
+vendor/etc/clstc_config_library.xml
+vendor/lib64/libbacklight-calib.so
+vendor/lib64/libclstc_algorithm_adapter.so
+vendor/lib64/libclstc_gcp_adapter.so
+vendor/lib64/libclstc_tm.so
+vendor/lib64/libdigital-dimming.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libhdr_backlight_adapter.so
+vendor/lib64/libintervmipc.so
+vendor/lib64/libqrtrclient.so
+vendor/lib64/libqseed3.so
+vendor/lib64/librcmask.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtestutils.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libvmfilexfer.so
 
 # Display (HDR)
 vendor/etc/libhdr_somc.xml
+
+# Display postprocessing
+vendor/bin/hw/vendor.qti.hardware.display.color-service
+vendor/bin/ppd
+vendor/etc/init/vendor.qti.hardware.display.color-service.rc
+vendor/lib64/libdisp-aba.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.color@1.3.so
+vendor/lib64/vendor.display.color@1.4.so
+vendor/lib64/vendor.display.color@1.5.so
+vendor/lib64/vendor.display.postproc@1.0.so
+
+# Display (HWC)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_DEPS;REQUIRED=vendor.qti.hardware.display.composer-service.rc,vendor.qti.hardware.display.composer-service.xml
+vendor/bin/qdcmss
+vendor/etc/init/qdcmss.rc
+vendor/etc/snapdragon_color_libs_config.xml
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libdpp_manager.so
+vendor/lib64/libdpps.so
+vendor/lib64/libgame_enhance.so
+vendor/lib64/libhistogram.so
+vendor/lib64/libmemutils.so
+vendor/lib64/libqdcm-algo.so
+vendor/lib64/libqdcm-json-mode-parser.so
+vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmdal.so
+vendor/lib64/libsdmutils.so
+vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libsnapdragoncolor-qdcm.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display Calibration
 vendor/etc/display/qdcm_calib_data_1.json
@@ -694,8 +755,7 @@ vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
 
 # WiFi firmware
-vendor/etc/wifi/bdwlan.e17;SYMLINK=vendor/firmware/kiwi/bdwlan.e17
-vendor/etc/wifi/bdwlan.e30;SYMLINK=vendor/firmware/kiwi/bdwlan.e30
-vendor/etc/wifi/bdwlan.e31;SYMLINK=vendor/firmware/kiwi/bdwlan.e31
+vendor/etc/wifi/bdwlan.e21;SYMLINK=vendor/firmware/kiwi/bdwlan.e21
+vendor/etc/wifi/bdwlan.elf;SYMLINK=vendor/firmware/kiwi/bdwlan.elf
 vendor/etc/wifi/regdb.bin;SYMLINK=vendor/firmware/kiwi/regdb.bin
 vendor/etc/wifi/wifi_txpower.conf
